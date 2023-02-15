@@ -1,142 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <!-- basic -->
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>Tripadvisor</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <!-- Tweaks for older IEs-->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans&family=Roboto+Mono:ital,wght@0,200;1,100&family=Sofia+Sans+Extra+Condensed:wght@200&display=swap"
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700|Righteous&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Document</title>
+    <!-- owl stylesheets -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen"
+    />
   </head>
   <body>
-    <!-- Starting point of Header  -->
-    <div class="header">
-      <h1 class="header-title">CodingTashkent</h1>
-      <ul class="header-list">
-        <li><a class="listtext" href="#">Home</a></li>
-        <li><a class="listtext" href="#">About</a></li>
-        <li><a class="listtext" href="#">Blogs</a></li>
-        <li><a class="listtext" href="#">Contacts</a></li>
-        <li><a class="listtext" href="#">Feedback</a></li>
-      </ul>
-      <form class="searchpart">
-        <input class="search" type="search" placeholder="Search..." />
-        <button class="search-btn">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </form>
-    </div>
-
-    <!-- Ending point of Header -->
-
-    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>> -->
-
-    <!-- Starting point of Body  -->
-
-    <div class="container">
-
-        
-    </div>
-
-    <!-- Ending point of Body -->
-
-    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>> -->
-
-    <!-- Starting point of footer  -->
-
-    <footer class="footer">
-      <div class="footer-main">
-        <div class="item">
-          <h3 class="footer-title">About US</h3>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-            accusamus?
-          </p>
-          <br />
-          <br /><br />
-          <h3 class="footer-title">Contact US</h3>
-          <br />
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-            accusamus?
-          </p>
+    <!-- header section start -->
+    <div class="header_section">
+      <div class="header_main">
+        <div class="mobile_menu">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="logo_mobile">
+              <a href="index.html"><img src="images/map-icon.png" /></a>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-        <div class="item">
-          <ul>
-            <li><h3 class="footer-title">About our company</h3></li>
-            <br />
-            <li><p>About Us</p></li>
-            <br />
-            <li><p>Blog</p></li>
-            <br />
-            <li><p>Join Us</p></li>
-            <br />
-            <li><p>Contacts</p></li>
-          </ul>
-        </div>
-        <div class="item">
-          <ul>
-            <li><h3 class="footer-title">Links</h3></li>
-            <br />
-            <li><p>About Us</p></li>
-            <br />
-            <li><p>Blog</p></li>
-            <br />
-            <li><p>Join Us</p></li>
-            <br />
-            <li><p>Contacts</p></li>
-          </ul>
-        </div>
-        <div class="item">
-          <h3 class="footer-title">Subscribe Us</h3>
-          <br />
-          <form>
-            <input
-              class="typetext"
-              type="email"
-              placeholder="Type your email"
-            />
-            <br />
-            <button class="subscribe-btn">Subscribe</button>
-          </form>
-        </div>
-      </div>
-      <div class="footer-afterline">
-        <hr class="line" />
-        <div class="icons">
-          <div class="logos">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <div class="container-fluid">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" /></a>
           </div>
-          <div class="logos">
-            <a href="#"><i class="fa-brands fa-telegram"></i> </a>
-          </div>
-          <div class="logos">
-            <a href="#"><i class="fa-brands fa-youtube"></i> </a>
-          </div>
-          <div class="logos">
-            <a href="#"><i class="fa-brands fa-instagram"></i> </a>
+          <div class="menu_main">
+            <ul>
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
           </div>
         </div>
       </div>
-    </footer>
-
-    <!-- Ending point of Body -->
+      <!-- banner section start -->
+      <div class="banner_section layout_padding">
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <h1 class="banner_taital">Discover your vocation</h1>
+                <p class="banner_text">
+                  We can create you a chance to make your vocation unforgattible
+                </p>
+                <div class="read_bt"><a href="#">Book a place</a></div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <h1 class="banner_taital">Explore your new world</h1>
+                <p class="banner_text">
+                  Fill your life with experiences not with things
+                </p>
+                <div class="read_bt"><a href="#">ask request</a></div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <h1 class="banner_taital">Don't skip the opportunity</h1>
+                <p class="banner_text">
+                  “You must go on adventures to find out where you truly belong”
+                  – Sue Fitzmaurice
+                </p>
+                <div class="read_bt"><a href="#">Get A Quote</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- banner section end -->
+    </div>
+    <!-- header section end -->
+    <!-- services section start -->
+    <div class="services_section layout_padding">
+      <div class="container">
+        <h1 class="services_taital">Services</h1>
+        <p class="services_text">
+          “Earth and sky, woods and fields, lakes and rivers, the mountain and
+          the sea, are excellent schoolmasters, and teach of us more than we can
+          ever learn from books.” – John Lubbock
+        </p>
+        <div class="services_section_2">
+          <div class="row">
+            <div class="col-md-4">
+              <div><img src="images/img-1.png" class="services_img" /></div>
+              <div class="btn_main"><a href="#">Rafting</a></div>
+            </div>
+            <div class="col-md-4">
+              <div><img src="images/img-2.png" class="services_img" /></div>
+              <div class="btn_main active"><a href="#">Hiking</a></div>
+            </div>
+            <div class="col-md-4">
+              <div><img src="images/img-3.png" class="services_img" /></div>
+              <div class="btn_main"><a href="#">Camping</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services section end -->
+    <!-- about section start -->
+    <div class="about_section layout_padding">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about_taital_main">
+              <h1 class="about_taital">About Us</h1>
+              <p class="about_text">
+                “Life should not be a journey to the grave with the intention of
+                arriving safely in a pretty and well-preserved body, but rather
+                to skid in broadside in a cloud of smoke, thoroughly used up,
+                totally worn out, and loudly proclaiming “Wow! What a Ride!” ―
+                Hunter S. Thompson
+              </p>
+              <div class="readmore_bt"><a href="#">Continui to Read</a></div>
+            </div>
+          </div>
+          <div class="col-md-6 padding_right_0">
+            <div><img src="images/about-img.png" class="about_img" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- about section end -->
+    <!-- blog section start -->
+    <div class="blog_section layout_padding">
+      <div class="container">
+        <h1 class="blog_taital">Take a view our Video</h1>
+        <p class="blog_text">
+          “One travels to run away from routine, that dreadful routine that
+          kills all imagination and all our capacity for enthusiasm. ” – Ella
+          Maillart
+        </p>
+        <div class="play_icon_main">
+          <div class="play_icon">
+            <a href="#"><img src="images/play-icon.png" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- blog section end -->
+    <!-- client section start -->
+    <div class="client_section layout_padding">
+      <div class="container">
+        <h1 class="client_taital">Testimonial</h1>
+        <div class="client_section_2">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="client_main">
+                  <div class="box_left">
+                    <p class="lorem_text">
+                      I think the trip, overall, was a huge success. Everything
+                      went as planned. Having that app "Trip Plans" was
+                      fabulous. I referred to that SO many times for details, u
+                      sing both the schedule by day and the pdf of the Final
+                      Itinerary. Both had different info that I needed to
+                      see.... I think Swiss Travel did a great job of
+                      summarizing the itinerary & communicating to me throughout
+                      the trip, i.e., when a tour was rescheduled or confirming
+                      some (but not all) pick ups. Pretty impressed with their
+                      support.... I really appreciated your communication with
+                      me during the trip, particularly getting the upgrade back
+                      for me. ... I had an absolutely fabulous time. I was
+                      traveling alone but never felt alone. You did an AMAZING
+                      job on this, Amber, and I have already told people about
+                      you and your help. We will definitely work together again
+                      in the near future!
+                    </p>
+                  </div>
+                  <div class="box_right">
+                    <div class="client_taital_left">
+                      <div class="client_img">
+                        <img src="images/index.jpg" />
+                      </div>
+                      <div class="quick_icon">
+                        <img src="images/quick-icon.png" />
+                      </div>
+                    </div>
+                    <div class="client_taital_right">
+                      <h4 class="client_name">Juli M</h4>
+                      <p class="customer_text">Customer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="client_main">
+                  <div class="box_left">
+                    <p class="lorem_text">
+                      "Hi Mandi, The trip was great overall. The cruise itself
+                      was amazing. Going to College Fjord was probably the
+                      highlight followed by Glacier Bay (a close second). We saw
+                      a lot of glacial calving of the Harvard Glacier in College
+                      Fjord. Otherwise Skagway was beautiful and Junea and
+                      Ketchikan were very nice too. The Bald Eagles around
+                      Ketchikan were amazing. The ship was extremely organized.
+                      It was impressive. The food was very good. .... Overall it
+                      was a great vacation and definitely our best. We are all
+                      happy we did it and I'd recommend it to anyone. I'm trying
+                      to get them to think about next year's vacation. Hopefully
+                      we can come up with some ideas in July."
+                    </p>
+                  </div>
+                  <div class="box_right">
+                    <div class="client_taital_left">
+                      <div class="client_img">
+                        <img src="images/client-img.png" />
+                      </div>
+                      <div class="quick_icon">
+                        <img src="images/quick-icon.png" />
+                      </div>
+                    </div>
+                    <div class="client_taital_right">
+                      <h4 class="client_name">
+                        Tom B. – Princess Alaska Cruise
+                      </h4>
+                      <p class="customer_text">Customer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="client_main">
+                  <div class="box_left">
+                    <p class="lorem_text">
+                      "The trip was wonderful - lots of great memories were
+                      made. All the arrangements (flights, hotels, cars, cab
+                      transfers) went as planned..... Wine country was fun -
+                      Penny even learned to enjoy good red wine. We toured Pear
+                      Harbor, the Dole plantation and the north shore on Oahu.
+                      On Maui we enjoyed the pool and beach, the LeLe Luau was
+                      outstanding, I play the Kaanapali Kai golf course,
+                      shopping in Lahaina, lots of great dinners/mai tais and
+                      just cruising around the island made the time pass too
+                      quickly. It was a great way to celebrate 50 years
+                      together." Mike C.
+                    </p>
+                  </div>
+                  <div class="box_right">
+                    <div class="client_taital_left">
+                      <div class="client_img">
+                        <img src="images/imgaaaa.jpg" />
+                      </div>
+                      <div class="quick_icon">
+                        <img src="images/quick-icon.png" />
+                      </div>
+                    </div>
+                    <div class="client_taital_right">
+                      <h4 class="client_name">Mike C</h4>
+                      <p class="customer_text">Customer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- client section start -->
+    <!-- choose section start -->
+    <div class="choose_section layout_padding">
+      <div class="container">
+        <h1 class="choose_taital">Why Choose Us</h1>
+        <p class="choose_text">
+          Honest prices – we have the best prices for tours, and a huge
+          selection of destinations will not leave indifferent even avid
+          tourist. Reliable partners – We work with the best tour operators who
+          over the years have proven their professionalism. Full Service –
+          Everything that a tourist may need when going abroad, in addition to
+          the ticket. Quality Guarantee – We do not have to worry about
+          paperwork necessary documents. Full support – contacting us, you get
+          full support, from choosing the tour and ending with advice on what to
+          take with you on a trip. Document processing – With us you won’t have
+          to worry about processing the necessary documents.
+        </p>
+        <div class="read_bt_1"><a href="#">Read More</a></div>
+        <div class="newsletter_box">
+          <h1 class="let_text">Let Start Talk with Us</h1>
+          <div class="getquote_bt"><a href="#">Get A Quote</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- choose section end -->
+    <!-- footer section start -->
+    <div class="footer_section layout_padding">
+      <div class="container">
+        <div class="input_btn_main">
+          <input
+            type="text"
+            class="mail_text"
+            placeholder="Enter your email"
+            name="Enter your email"
+          />
+          <div class="subscribe_bt"><a href="#">Subscribe</a></div>
+        </div>
+        <div class="location_main">
+          <div class="call_text"><img src="images/call-icon.png" /></div>
+          <div class="call_text"><a href="#">Call +998995705707 </a></div>
+          <div class="call_text"><img src="images/mail-icon.png" /></div>
+          <div class="call_text"><a href="#">umishyashike@gmail.com</a></div>
+        </div>
+        <div class="social_icon">
+          <ul>
+            <li>
+              <a href="#"><img src="images/fb-icon.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/twitter-icon.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/linkedin-icon.png" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="images/instagram-icon.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- footer section end -->
+    <!-- copyright section start -->
+    <div class="copyright_section">
+      <div class="container">
+        <p class="copyright_text">
+          2022 All Rights Reserved. Design by
+          <a href="https://html.design">Umrzok Makhmudov</a>
+        </p>
+      </div>
+    </div>
+    <!-- copyright section end -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript -->
+    <script src="js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
   </body>
 </html>
+<img src="images/footer-bg.png" alt="">
+
+
+<link rel="stylesheet" href="">
